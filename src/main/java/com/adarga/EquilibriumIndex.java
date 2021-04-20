@@ -10,13 +10,14 @@ import java.util.List;
 public class EquilibriumIndex {
 
     public static int[] findEquilibriumIndex(int[] array) {
-        System.out.println(Arrays.toString(array));
+
         if (array.length < 3) return new int[0];
 
         int[] leftToRightArray = new int[array.length];
         int[] rightToLeftArray = new int[array.length];
 
         int cumulativeSum = 0;
+
         /**
          * Fill the leftToRight array with cumulative sum at each index
          *
